@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Список файлов</title>
+</head>
+<body>
+    <h1>Список файлов</h1>
+    <table id="fileTable">
+        <tr>
+            <th>ID</th>
+            <th>Имя файла</th>
+            <th>Ссылка на VirusTotal</th>
+            <th>Ссылка для скачивания</th>
+        </tr>
+    </table>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const table = document.getElementById('fileTable');
+                data.forEach(file => {
+                    const row = table.insertRow();
+                    row.insertCell(0).textContent = file.id;
+                    row.insertCell(1).textContent = file.fileName;
+                    row.insertCell(2).innerHTML = `<a href="${file.vtLink}" target="_blank">Проверить</a>`;
+                    row.insertCell(3).innerHTML = `<a href="${file.downloadLink}">Скачать</a>`;
+                });
+            })
+            .catch(error => console.error('Ошибка загрузки данных:', error));
+    </script>
+</body>
+</html>

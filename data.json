@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "fileName": "file1.txt",
+        "vtLink": "https://www.virustotal.com/gui/file/1",
+        "downloadLink": "https://example.com/download/file1.txt"
+    },
+    {
+        "id": 2,
+        "fileName": "file2.txt",
+        "vtLink": "https://www.virustotal.com/gui/file/2",
+        "downloadLink": "https://example.com/download/file2.txt"
+    }
+]
