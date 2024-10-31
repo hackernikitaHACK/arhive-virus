@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "fileName": "file1.txt",
-        "vtLink": "https://www.virustotal.com/gui/file/1",
-        "downloadLink": "https://example.com/download/file1.txt"
+        "fileName": "4caf658df95093967742e497c6f0cfd91e0729416df2754cb69a8db9ab74b5f6.zip (password: infected)",
+        "vtLink": "https://www.virustotal.com/gui/file/4caf658df95093967742e497c6f0cfd91e0729416df2754cb69a8db9ab74b5f6?nocache=1",
+        "downloadLink": "https://file.io/XGXAUUIN2jUq"
     },
     {
         "id": 2,
