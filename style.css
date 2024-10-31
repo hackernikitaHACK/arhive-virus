@@ -1,19 +1,49 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    background-color: #000; /* Черный фон */
+    color: #00ff00; /* Зеленый текст */
+    font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00ff00; /* Светящийся текст */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
 th, td {
+    border: 1px solid #00ff00; /* Зеленая рамка */
     padding: 10px;
-    border: 1px solid #ddd;
     text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #003300; /* Темно-зеленый фон для заголовков */
+}
+
+tr:hover {
+    background-color: rgba(0, 255, 0, 0.1); /* Подсветка строки при наведении */
+}
+
+a {
+    color: #00ff00; /* Зеленый цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #aaaaaa; /* Серый текст для подвала */
 }
